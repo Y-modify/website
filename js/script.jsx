@@ -12,22 +12,26 @@ const views = [
   {
     path:"/",
     display: "Y-modify",
-    view: Home
+    view: Home,
+    menu:[]
   },
   {
     path:"/about",
     display: "about us",
-    view: About
+    view: About,
+    menu:["About","Members"]
   },
   {
     path:"/projects",
     display: "projects",
-    view: Projects
+    view: Projects,
+    menu:["YamaX","Flixa","Ozone OS"]
   },
   {
     path:"/contact",
     display: "contact",
-    view: Contact
+    view: Contact,
+    menu:[]
   }
 ];
 
@@ -48,6 +52,14 @@ const view = (state, actions) => (
             views.map(view =>
               <li>
                 <Link to={view.path}>{view.display}</Link>
+                <ul>
+                  {
+                      view.menu.map(menu =>
+                      <li>{menu}</li>
+                      )
+                     
+                  }
+                </ul>
               </li>
             )
           }

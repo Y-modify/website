@@ -19,13 +19,13 @@ const views = [
     path:"/about",
     display: "about us",
     view: About,
-    menu:["About","Members"]
+    menu:[["About","/about"],["Members","/about/members"]]
   },
   {
     path:"/projects",
     display: "projects",
     view: Projects,
-    menu:["YamaX","Flixa","Ozone OS"]
+    menu:[["YamaX","/projects/yamax"],["Flixa","projects/flixa"],["Ozone OS","projects/ozone_os"]]
   },
   {
     path:"/contact",
@@ -55,7 +55,7 @@ const view = (state, actions) => (
                 <ul>
                   {
                       view.menu.map(menu =>
-                      <li>{menu}</li>
+                      <li><Link to={menu[1]}>{menu[0]}</Link></li>
                       )
                      
                   }

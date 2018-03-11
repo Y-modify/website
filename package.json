@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-brands": "^5.0.8",
     "@hyperapp/router": "^0.4.1",
+    "font-awesome": "^4.7.0",
     "hyperapp": "^1.0.2"
   },
   "devDependencies": {

@@ -1,11 +1,24 @@
 import { h, app } from "hyperapp"
 import { Link, Route, location } from "@hyperapp/router"
-
+import fontawesome from '@fortawesome/fontawesome'
+import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook'
+import { Hero,Description } from "./home/hero.jsx"
 import styles from "../css/style.css"
-
-const Home = () => <h2>Home</h2>
-const About = () => <h2>About</h2>
-const Projects = () => <h2>Projects</h2>
+fontawesome.library.add(faFacebook)
+const Home = () => ( 
+    <main>
+        <h2>Home</h2>
+        <Hero />
+        <Description /> 
+    </main>)
+const About = () => (
+    <main>
+        <h2>About</h2>
+    </main>)
+const Projects = () => (
+    <main>
+        <h2>Projects</h2>
+    </main>)
 const Contact = () => <h2>Contact</h2>
 
 const views = [
@@ -66,13 +79,13 @@ const view = (state, actions) => (
         </ul>
       </nav>
     </header>
-    <main>
       {
         views.map(view =>
-          <Route path={view.path} render={view.view} />
+          <div>
+            <Route path={view.path} render={view.view} />
+          </div>
         )
       }
-    </main>
   </div>
 )
 

@@ -3,6 +3,8 @@ import { Link, Route, location } from "@hyperapp/router"
 import fontawesome from '@fortawesome/fontawesome'
 import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook'
 import { Hero,Description } from "./home/hero.jsx"
+import {Products} from "./home/product.jsx"
+import {AboutUs} from "./about/us.jsx"
 import styles from "../css/style.css"
 fontawesome.library.add(faFacebook)
 const Home = () => ( 
@@ -10,16 +12,25 @@ const Home = () => (
         <h2>Home</h2>
         <Hero />
         <Description /> 
+        <Products />
     </main>)
 const About = () => (
     <main>
         <h2>About</h2>
+        <Description />
+        <AboutUs />
     </main>)
 const Projects = () => (
     <main>
         <h2>Projects</h2>
     </main>)
 const Contact = () => <h2>Contact</h2>
+
+const Footer = () => (
+    <footer>
+        <p>Copyright © 2017 Y-modify All Rights Reserved.</p>
+    </footer>
+)
 
 const views = [
   {
@@ -86,6 +97,7 @@ const view = (state, actions) => (
           </div>
         )
       }
+    <Footer />
   </div>
 )
 

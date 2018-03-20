@@ -1,7 +1,7 @@
-import { h, app } from "hyperapp"
-import { Link, Route, location } from "@hyperapp/router"
+import { h, app } from 'hyperapp'
+import { Link, Route, location } from '@hyperapp/router'
 
-import styles from "../css/style.css"
+import styles from '../css/style.css'
 
 const Home = () => <h2>Home</h2>
 const About = () => <h2>About</h2>
@@ -10,26 +10,26 @@ const Contact = () => <h2>Contact</h2>
 
 const views = [
   {
-    path:"/",
-    display: "Y-modify",
+    path:'/',
+    display: 'Y-modify',
     view: Home
   },
   {
-    path:"/about",
-    display: "about us",
+    path:'/about',
+    display: 'about us',
     view: About
   },
   {
-    path:"/projects",
-    display: "projects",
+    path:'/projects',
+    display: 'projects',
     view: Projects
   },
   {
-    path:"/contact",
-    display: "contact",
+    path:'/contact',
+    display: 'contact',
     view: Contact
   }
-];
+]
 
 const state = {
   location: location.state

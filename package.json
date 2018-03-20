@@ -2,6 +2,7 @@
   "dependencies": {
     "@hyperapp/router": "^0.4.1",
     "eslint": "^4.19.0",
+    "eslint-plugin-react": "^7.7.0",
     "hyperapp": "^1.0.2"
   },
   "devDependencies": {

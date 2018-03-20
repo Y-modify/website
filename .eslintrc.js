@@ -3,7 +3,12 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended"
+    ],
+    "plugins": [
+      "react"
+    ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -11,6 +16,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "react/jsx-uses-vars": 2,
         "no-unused-vars": [
             "error",
             {

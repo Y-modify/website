@@ -62,7 +62,7 @@ export const Products = () => (
             <ul>
               {
                 pd.functions.map(func => 
-                  <li>func</li>
+                  <li>{func}</li>
                 )
               }
             </ul>

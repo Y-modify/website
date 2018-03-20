@@ -1,5 +1,6 @@
-import { h, app } from 'hyperapp'
-import { Link, Route, location } from '@hyperapp/router'
+import { h } from 'hyperapp'
+import { Link } from '@hyperapp/router'
+
 const products = [
   {
     title:'YamaX',

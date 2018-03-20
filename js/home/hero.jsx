@@ -1,4 +1,4 @@
-import { h, app } from 'hyperapp'
+import { h } from 'hyperapp'
 import fontawesome from '@fortawesome/fontawesome'
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
 import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook'
@@ -6,7 +6,7 @@ import faGooglePlusG from '@fortawesome/fontawesome-free-brands/faGooglePlusG'
 import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram'
 import faTumblr from '@fortawesome/fontawesome-free-brands/faTumblr'
 import faYoutube from '@fortawesome/fontawesome-free-brands/faYoutube'
-import { Link, Route, location } from '@hyperapp/router'
+import { Link } from '@hyperapp/router'
 
 fontawesome.library.add(faFacebook)
 fontawesome.library.add(faTwitter)
